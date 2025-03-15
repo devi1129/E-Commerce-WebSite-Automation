@@ -40,5 +40,4 @@ Before running the tests, ensure you have the following installed:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/green-kart-automation.git
-   cd green-kart-automation
+   git clone https://github.com/devi1129/E-Commerce-WebSite-Automation.git

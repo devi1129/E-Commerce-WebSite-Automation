@@ -1,4 +1,4 @@
-
+@search
 Feature: Search and place the order for products
 Scenario Outline: Validating search results in home page and Top Deals Page
 Given user is on Green kart landing page
