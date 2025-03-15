@@ -19,7 +19,7 @@ The tests are written in **Cucumber** (using **Gherkin** syntax) for behavior-dr
 - **Java**: Primary programming language for test scripts.
 - **Selenium WebDriver**: For browser automation and interacting with web elements.
 - **Cucumber**: For writing BDD-style feature files and executing tests.
-- **TestNG**: For managing and executing tests, including test grouping and parallel execution.
+- **TestNG**: For managing and executing tests.
 - **Apache POI**: To read data from Excel files for data-driven testing.
 - **Maven**: For project dependency management and build automation.
 - **Git**: For version control.
