@@ -14,8 +14,7 @@ public class BasePage {
 
 	public BasePage(WebDriver driver) {
 		this.driver = driver;
-		// 10 seconds wait time for element visibility
-		// Initialize elements in the page using PageFactory
+
 	
 		PageFactory.initElements(driver, this);
 
@@ -34,6 +33,10 @@ public class BasePage {
 
 		element.clear(); // Clear text if the field already has text
 		element.sendKeys(text);
+	}
+	public void test()
+	{
+
 	}
 
 //	// Wait for an element to be visible
