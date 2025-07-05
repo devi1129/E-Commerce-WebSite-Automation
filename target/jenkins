@@ -1,0 +1,40 @@
+pipeline {
+    agent any
+
+    tools {
+        maven 'Maven' // Check actual name in Jenkins
+        jdk 'JDK'     // Check actual name in Jenkins
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git url: 'https://github.com/devi1129/E-Commerce-WebSite-Automation.git',
+                    branch: 'master',
+                    credentialsId: 'e6fc169f-a789-4839-8759-1ec7167aa304'
+            }
+        }
+
+        stage('Compile') {
+            steps {
+                bat 'mvn clean compile'
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                bat 'mvn test -Dtest=TestNGTestRunner'
+            }
+        }
+    }
+
+    post {
+
+        success {
+            echo 'Build and tests completed successfully!'
+        }
+        failure {
+            echo 'Build or tests failed.'
+        }
+    }
+}
